@@ -12,4 +12,4 @@ export interface Character extends BaseCharacter {
 
 export type ICreateCharacter = BaseCharacter;
 
-export interface IUpdateCharacter extends Omit<Character, "id" | "gender"> {}
+export type IUpdateCharacter = Omit<BaseCharacter, "id" | "gender">;
