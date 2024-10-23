@@ -10,6 +10,6 @@ export interface Character extends BaseCharacter {
   id: number;
 }
 
-export interface ICreateCharacter extends Omit<Character, "id"> {}
+export type ICreateCharacter = BaseCharacter;
 
 export interface IUpdateCharacter extends Omit<Character, "id" | "gender"> {}
