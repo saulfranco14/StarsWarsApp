@@ -1,0 +1,125 @@
+{
+    "characters": [
+      {
+        "id": 1,
+        "name": "Luke Skywalker",
+        "gender": "male",
+        "species": "human",
+        "homeworld": "Tatooine",
+        "image": "https://starwars-visualguide.com/assets/img/characters/1.jpg"
+      },
+      {
+        "id": 2,
+        "name": "Leia Organa",
+        "gender": "female",
+        "species": "human",
+        "homeworld": "Alderaan",
+        "image": "https://starwars-visualguide.com/assets/img/characters/5.jpg"
+      },
+      {
+        "id": 3,
+        "name": "Darth Vader",
+        "gender": "male",
+        "species": "human",
+        "homeworld": "Tatooine",
+        "image": "https://starwars-visualguide.com/assets/img/characters/4.jpg"
+      },
+      {
+        "id": 4,
+        "name": "Yoda",
+        "gender": "male",
+        "species": "Yoda's species",
+        "homeworld": "Dagobah",
+        "image": "https://starwars-visualguide.com/assets/img/characters/20.jpg"
+      },
+      {
+        "id": 5,
+        "name": "Obi-Wan Kenobi",
+        "gender": "male",
+        "species": "human",
+        "homeworld": "Stewjon",
+        "image": "https://starwars-visualguide.com/assets/img/characters/10.jpg"
+      },
+      {
+        "id": 6,
+        "name": "Han Solo",
+        "gender": "male",
+        "species": "human",
+        "homeworld": "Corellia",
+        "image": "https://starwars-visualguide.com/assets/img/characters/14.jpg"
+      },
+      {
+        "id": 7,
+        "name": "Chewbacca",
+        "gender": "male",
+        "species": "Wookiee",
+        "homeworld": "Kashyyyk",
+        "image": "https://starwars-visualguide.com/assets/img/characters/13.jpg"
+      },
+      {
+        "id": 8,
+        "name": "R2-D2",
+        "gender": "unknown",
+        "species": "droid",
+        "homeworld": "Naboo",
+        "image": "https://starwars-visualguide.com/assets/img/characters/3.jpg"
+      },
+      {
+        "id": 9,
+        "name": "C-3PO",
+        "gender": "unknown",
+        "species": "droid",
+        "homeworld": "Tatooine",
+        "image": "https://starwars-visualguide.com/assets/img/characters/2.jpg"
+      },
+      {
+        "id": 10,
+        "name": "Lando Calrissian",
+        "gender": "male",
+        "species": "human",
+        "homeworld": "Socorro",
+        "image": "https://starwars-visualguide.com/assets/img/characters/25.jpg"
+      },
+      {
+        "id": 11,
+        "name": "Boba Fett",
+        "gender": "male",
+        "species": "human",
+        "homeworld": "Kamino",
+        "image": "https://starwars-visualguide.com/assets/img/characters/22.jpg"
+      },
+      {
+        "id": 12,
+        "name": "Jabba the Hutt",
+        "gender": "male",
+        "species": "Hutt",
+        "homeworld": "Nal Hutta",
+        "image": "https://starwars-visualguide.com/assets/img/characters/16.jpg"
+      },
+      {
+        "id": 13,
+        "name": "Palpatine",
+        "gender": "male",
+        "species": "human",
+        "homeworld": "Naboo",
+        "image": "https://starwars-visualguide.com/assets/img/characters/21.jpg"
+      },
+      {
+        "id": 14,
+        "name": "Qui-Gon Jinn",
+        "gender": "male",
+        "species": "human",
+        "homeworld": "unknown",
+        "image": "https://starwars-visualguide.com/assets/img/characters/32.jpg"
+      },
+      {
+        "id": 15,
+        "name": "Mace Windu",
+        "gender": "male",
+        "species": "human",
+        "homeworld": "Haruun Kal",
+        "image": "https://starwars-visualguide.com/assets/img/characters/12.jpg"
+      }
+    ]
+  }
+  
