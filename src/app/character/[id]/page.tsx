@@ -1,7 +1,6 @@
 "use client";
 
 import { getCharacterById, updateCharacter } from "@/services/character";
-import { validateId } from "@/utils/validateId";
 import { useState, useEffect } from "react";
 import { notFound, useRouter } from "next/navigation";
 import Image from "next/image";
