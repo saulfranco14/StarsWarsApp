@@ -1,8 +1,8 @@
-# Star Wars Item Management
+# Star Wars Information
 
 ![Star Wars](https://upload.wikimedia.org/wikipedia/commons/6/6c/Star_Wars_Logo.svg)
 
-Esta aplicación permite la gestión de items del universo de **Star Wars**, donde los usuarios pueden **crear**, **editar**, y **eliminar** items con una interfaz moderna. Además, cuenta con visualización de tablas para gestionar los datos de manera clara y eficiente.
+Esta aplicación permite la gestión de items del universo de **Star Wars**, donde los usuarios pueden **crear**, **editar**, y **eliminar** con una interfaz. Además, cuenta con visualización de cards para gestionar los datos de manera clara y eficiente.
 
 ## Funcionalidades Principales
 
@@ -23,5 +23,5 @@ Este proyecto sigue las siguientes reglas y tecnologías:
 
 ## Compartir
 
-- **URL de la aplicación**: [Inserta aquí la URL del despliegue en Vercel]
-- **Repositorio GitHub**: [[Inserta aquí la URL del repositorio](https://github.com/saulfranco14/starswarsapp)]
+- **URL de la aplicación**: [[Vercel](https://starswarsapp.vercel.app/)]
+- **Repositorio GitHub**: [[Github](https://github.com/saulfranco14/starswarsapp)]
