@@ -6,6 +6,7 @@ import { notFound, useRouter } from "next/navigation";
 import Image from "next/image";
 import { Formik, Field, Form, ErrorMessage } from "formik";
 import * as Yup from "yup";
+import { IUpdateCharacter } from "@/interfaces";
 
 export default function CharacterEditPage({
   params,
@@ -52,7 +53,7 @@ export default function CharacterEditPage({
     image: Yup.string().url("Invalid URL").required("Image URL is required"),
   });
 
-  const handleSubmit = async (values: any) => {
+  const handleSubmit = async (values: IUpdateCharacter) => {
     try {
       if (characterId) {
         await updateCharacter(characterId, values);
@@ -69,7 +70,11 @@ export default function CharacterEditPage({
   };
 
   if (loading) {
-    return <div className="w-screen h-screen text-2xl font-bold flex justify-center items-center">Loading...</div>;
+    return (
+      <div className="w-screen h-screen text-2xl font-bold flex justify-center items-center">
+        Loading...
+      </div>
+    );
   }
 
   return (

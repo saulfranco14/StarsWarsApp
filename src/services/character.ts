@@ -1,4 +1,4 @@
-import { Character, CreateCharacter, UpdateCharacter } from "@/interfaces";
+import { ICreateCharacter, IUpdateCharacter } from "@/interfaces";
 
 const API_URL = process.env.NEXT_PUBLIC_API_BASE_URL;
 
@@ -39,7 +39,7 @@ export const getCharacterById = async (id: number) => {
 
 export const updateCharacter = async (
   id: number,
-  characterData: UpdateCharacter
+  characterData: IUpdateCharacter
 ) => {
   const response = await fetch(`${API_URL}/characters/${id}`, {
     method: "PATCH",
@@ -64,7 +64,7 @@ export const deleteCharacter = async (id: number) => {
   return await response.json();
 };
 
-export const createCharacter = async (characterData: CreateCharacter) => {
+export const createCharacter = async (characterData: ICreateCharacter) => {
   const response = await fetch(`${API_URL}/characters`, {
     method: "POST",
     headers: {

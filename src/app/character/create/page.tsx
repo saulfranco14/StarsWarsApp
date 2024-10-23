@@ -4,6 +4,7 @@ import { useRouter } from "next/navigation";
 import { Formik, Field, Form, ErrorMessage } from "formik";
 import * as Yup from "yup";
 import { createCharacter } from "@/services/character";
+import { ICreateCharacter } from "@/interfaces";
 
 const validationSchema = Yup.object({
   name: Yup.string().required("Name is required"),
@@ -24,7 +25,7 @@ export default function CreateCharacter() {
     image: "",
   };
 
-  const handleSubmit = async (values: any) => {
+  const handleSubmit = async (values: ICreateCharacter) => {
     await createCharacter(values);
     router.push("/");
   };
