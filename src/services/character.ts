@@ -1,3 +1,5 @@
+import { Character, CreateCharacter, UpdateCharacter } from "@/interfaces";
+
 const API_URL = process.env.NEXT_PUBLIC_API_BASE_URL;
 
 if (!API_URL)
@@ -35,7 +37,10 @@ export const getCharacterById = async (id: number) => {
   }
 };
 
-export const updateCharacter = async (id: number, characterData: any) => {
+export const updateCharacter = async (
+  id: number,
+  characterData: UpdateCharacter
+) => {
   const response = await fetch(`${API_URL}/characters/${id}`, {
     method: "PATCH",
     headers: {
@@ -59,7 +64,7 @@ export const deleteCharacter = async (id: number) => {
   return await response.json();
 };
 
-export const createCharacter = async (characterData: any) => {
+export const createCharacter = async (characterData: CreateCharacter) => {
   const response = await fetch(`${API_URL}/characters`, {
     method: "POST",
     headers: {
