@@ -8,8 +8,7 @@ import { useCharacterStore } from "@/store/useCharacterCreateStore";
 import { validationSchema } from "@/helpers/validationFormCharacter";
 import { formFields } from "@/config/formCreateCharacter";
 import { ICreateCharacter } from "@/interfaces";
-import { notifyError, notifySuccess } from "@/utils";
-import { useEffect } from "react";
+import { notifySuccess } from "@/utils";
 
 export default function CreateCharacter() {
   const router = useRouter();

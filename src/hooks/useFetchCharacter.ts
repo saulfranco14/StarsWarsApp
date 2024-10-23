@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import { notFound } from "next/navigation";
+
 import { getCharacterById } from "@/services/character";
 import { useUpdateCharacterStore } from "@/store/useCharacterUpdateStore";
 

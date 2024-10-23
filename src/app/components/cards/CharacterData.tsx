@@ -1,14 +1,16 @@
 "use client";
 
-import { Character } from "@/interfaces";
-import CharacterCard from "./CharacterCard";
-import { CharacterDataProps } from "@/interfaces/characterDataProp";
-import { useRouter } from "next/navigation";
-import ButtonsCards from "../button/ButtonsCards";
-import { deleteCharacter, getCharacters } from "@/services/character";
 import { useState, useEffect } from "react";
-import { notifyError, notifySuccess } from "@/utils";
+import { useRouter } from "next/navigation";
+
+import { Character } from "@/interfaces";
 import { ConfirmDialog } from "../modal";
+import { CharacterDataProps } from "@/interfaces/characterDataProp";
+import { deleteCharacter, getCharacters } from "@/services/character";
+import { notifyError, notifySuccess } from "@/utils";
+import CharacterCard from "./CharacterCard";
+import ButtonsCards from "../button/ButtonsCards";
+
 
 export default function CharacterData({
   characters: initialCharacters,
