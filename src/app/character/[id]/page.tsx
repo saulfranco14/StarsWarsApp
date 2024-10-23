@@ -9,6 +9,7 @@ import { useUpdateCharacterStore } from "@/store/useCharacterUpdateStore";
 import { updateValidationSchema } from "@/helpers/validationFormCharacter";
 import { useFetchCharacter } from "@/hooks/useFetchCharacter";
 import { updateFormFields } from "@/config/formUpdateCharacter";
+import { notifySuccess } from "@/utils";
 
 export default function CharacterEditPage({
   params,
@@ -24,7 +25,7 @@ export default function CharacterEditPage({
     try {
       if (characterId) {
         await updateCharacter(characterId, values);
-        alert("Character updated successfully!");
+        notifySuccess("Character updated successfully!");
         router.push(`/`);
       }
     } catch (error) {

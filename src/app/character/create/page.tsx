@@ -8,6 +8,8 @@ import { useCharacterStore } from "@/store/useCharacterCreateStore";
 import { validationSchema } from "@/helpers/validationFormCharacter";
 import { formFields } from "@/config/formCreateCharacter";
 import { ICreateCharacter } from "@/interfaces";
+import { notifyError, notifySuccess } from "@/utils";
+import { useEffect } from "react";
 
 export default function CreateCharacter() {
   const router = useRouter();
@@ -16,7 +18,7 @@ export default function CreateCharacter() {
   const handleSubmit = async (values: ICreateCharacter) => {
     await createCharacter(values);
     router.push("/");
-    alert("Character created successfully!");
+    notifySuccess("Character created successfully!");
   };
 
   const handleCancel = () => {
